@@ -44,7 +44,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 12vh;
 }
@@ -87,6 +87,7 @@ nav {
     font-size: 32px;
     fill: #e6f7f5;
     padding-right: 40px;
+    cursor: pointer;
 }
 
 #user {
@@ -101,7 +102,7 @@ nav {
 }
 
 .Header ul li {
-    padding: 10px 20px;
+    padding: 10px 10px;
     position: relative;
     list-style: none;
 }
@@ -131,7 +132,7 @@ nav a {
     gap: 30px;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     z-index: 10;
     background-color: #107575;
 }
@@ -338,7 +339,6 @@ aside>.menu-nav {
 }
 
 .shop {
-    /* margin-top: 180px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,6 +346,7 @@ aside>.menu-nav {
     grid-template-columns: auto auto;
     gap: 20px;
     padding: 2rem;
+    margin-top: 50px;
 }
 
 .product {
@@ -537,17 +538,12 @@ footer {
 /* Enlarge System */
 
 @media screen and (max-width:2561px) {
-    .shop {
-        margin-top: 150px;
-    }
-
     .footer-header {
         font-size: 32px;
     }
 
     .logo1 {
         width: 350px;
-        padding: 20px;
     }
 
     .set1,
@@ -563,7 +559,6 @@ footer {
 
 @media screen and (max-width:1441px) {
     .shop {
-        margin-top: 80px;
         display: grid;
         grid-template-columns: auto auto auto;
     }

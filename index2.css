@@ -59,12 +59,12 @@ body {
 }
 
 .logo {
-    width: 350px;
+    width: 280px;
     background-size: cover;
 }
 .logo1 {
     height: 60px;
-    width: 300px;
+    width: 350px;
     object-fit: cover;
 }
 nav {
@@ -297,7 +297,6 @@ aside>.menu-nav {
     object-fit: cover;
     background-position: center;
     filter: brightness(20%);
-    /* position: fixed; */
 }
 
 .home-content {
@@ -480,6 +479,7 @@ footer {
     background: var(--dark);
     object-fit: cover;
     margin-top: 20px;
+    font-size: 22px;
 }
 
 .set1 {
@@ -595,6 +595,12 @@ footer {
 
     .thing2 button {
         font-size: 18px;
+    }
+    .footer-parent {
+        font-size: 20px;
+    }
+    .footer-li a {
+        font-size: 20px;
     }
 }
 

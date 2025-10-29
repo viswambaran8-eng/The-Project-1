@@ -319,10 +319,10 @@ aside>.menu-nav {
 
 .section-title {
     font-size: 56px;
-    margin-top: 50px;
     color: #107575;
-    padding: 60px;
+    padding: 20px;
     text-align: center;
+    margin-top: 85px;
 }
 
 .nest {
@@ -462,7 +462,7 @@ footer {
     .section-title {
         text-align: center;
         font-size: 3.5rem;
-        margin-top: 120px;
+        /* margin-top: 120px; */
         padding: 20px;
         width: 100%;
         color: #107575;

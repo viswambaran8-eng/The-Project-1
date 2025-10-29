@@ -120,7 +120,7 @@ nav a {
     font-size: x-large;
 }
 .menu-nav {
-    margin-top: 80px;
+    /* margin-top: 80px; */
     width: 50%;
     padding: 30px;
     border-radius: 30px;
@@ -778,7 +778,6 @@ li {
     object-fit: contain;
     padding: 20px;
     animation: image1 2s ease-in forwards;
-    /* 👈 order & settings fixed */
 }
 
 @keyframes image1 {
@@ -1018,7 +1017,6 @@ footer {
 .logo1 {
     height: 80px;
     object-fit: cover;
-    margin-top: 0px;
 }
 
 .set2 {
@@ -1164,7 +1162,6 @@ footer {
 
     .logo1 {
         width: 350px;
-        padding: 20px;
     }
 
     .set1,

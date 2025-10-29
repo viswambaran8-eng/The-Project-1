@@ -189,7 +189,7 @@ aside>.menu-nav {
     gap: 30px;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     z-index: 10;
     background-color: #107575;
     list-style: none;

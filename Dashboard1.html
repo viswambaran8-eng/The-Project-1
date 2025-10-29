@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Battery Industry</title>
+    <link rel="stylesheet" href="Dashboard1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+</head>
+
+<body>
+    <div class="Header">
+        <nav>
+            <a href="#img">
+                <img class="logo" src="Assests/Stackly-blue-removebg-preview.png" alt="">
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown"><a href="index.html" class="nav-link">Home <i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="index2.html">Home Page 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="Dashboard1.html" class="nav-link active">Dashboard</a></li>
+                <li><a href="addtocart.html" class="cta-button">Shop Now</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <a href="login.html" class="anchor"><i class="fa-regular fa-circle-user" id="user">
+                    <p class="user-para">Login In</p>
+                </i></a>
+        </nav>
+    </div>
+    <div class="all">
+        <div class="table1">
+            <div class="boxes">
+                <h3>Total Batteries Produced</h3>
+                <p>125,000 units</p>
+            </div>
+            <div class="boxes">
+                <h3>Active Installations</h3>
+                <p>86000</p>
+            </div>
+            <div class="boxes">
+                <h3>Battery Efficiency Average</h3>
+                <p>94.8%</p>
+            </div>
+            <div class="boxes">
+                <h3>Defective Rate</h3>
+                <p>1.2%</p>
+            </div>
+            <div class="boxes">
+                <h3>Average Energy Density</h3>
+                <p>260 Wh/kg</p>
+            </div>
+        </div>
+        <div class="table2">
+            <div class="container1">
+                <canvas id="myChart1"></canvas>
+            </div>
+            <div class="container2">
+                <canvas style="min-height: 925px;" id="myChart2"></canvas>
+            </div>
+        </div>
+        <div class="table3">
+            <div class="Box">
+                <div class="head">
+                    <h2>Charging Stations</h2>
+                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                </div>
+                <div class="module">
+                    <div class="content">
+                        <h2>Total</h2>
+                        <p>235</p>
+                    </div>
+                    <div class="content">
+                        <h2>Online</h2>
+                        <p>92%</p>
+                    </div>
+                    <div class="content">
+                        <h2>Offline</h2>
+                        <p>8%</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="content">
+                        <h2>Available</h2>
+                        <p>145</p>
+                    </div>
+                    <div class="content">
+                        <h2>In Use</h2>
+                        <p>65</p>
+                    </div>
+                    <div class="content">
+                        <h2>Unavailable</h2>
+                        <p>15</p>
+                    </div>
+                </div>
+                <div>
+                    <canvas id="mychart4" style="max-height: 350px;object-fit: contain; "></canvas>
+                </div>
+            </div>
+            <div class="Box">
+                <div class="head">
+                    <h2>Charging Information</h2>
+                    <h2>History</h2>
+                </div>
+                <div class="module">
+                    <div class="Basket">
+                        <p><i style="color: purple;" class="fa-solid fa-battery-three-quarters"></i></p>
+                        <h3>Percentage</h3>
+                        <p>76%</p>
+                    </div>
+                    <div class="Basket">
+                        <h2>28 Jan'24</h2>
+                        <p>50 min</p>
+                        <p style="font-size: 20px;"><i
+                                style="color: white; background-color: darkgreen; font-size: x-large;"
+                                class="fa-solid fa-bolt"></i>52 KWH</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="Basket">
+                        <p><i style="color: gold;" class="fa-solid fa-bolt"></i></p>
+                        <h3>KWH</h3>
+                        <p>76%</p>
+                    </div>
+                    <div class="Basket">
+                        <h2>15 Mar'24</h2>
+                        <p>80 min</p>
+                        <p style="font-size: 20px;"><i
+                                style="color: white; background-color: darkgreen; font-size: x-large;"
+                                class="fa-solid fa-bolt"></i>60 KWH</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="Basket">
+                        <p><i style="color: rgb(226, 9, 129);" class="fa-solid fa-dollar-sign"></i></p>
+                        <h3>Total</h3>
+                        <p>$765</p>
+                    </div>
+                    <div class="Basket">
+                        <h2>12 Aug'24</h2>
+                        <p>120 min</p>
+                        <p style="font-size: 20px;"><i
+                                style="color: white; background-color: darkgreen; font-size: x-large;"
+                                class="fa-solid fa-bolt"></i>45 KWH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Box">
+                <div style="gap: 2px;" class="head">
+                    <h2>Energy & Time<i
+                            style="background-color: rgb(216, 209, 209); color: rgb(30, 77, 93);; border-radius: 50%; padding: 4px;"
+                            class="fa-solid fa-info"></i></h2>
+                    <h2>Average Cost</h2>
+                </div>
+                <div class="chart3">
+                    <canvas id="myChart3" style="width:100%;
+            min-height: 625px;"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="table4">
+            <h2 style="color:#052525 ;">© Electric Battery Industry All Rights Reserved.</h2>
+            <h2 style="color: blue;">Purchase Now</h2>
+        </div>
+    </div>
+    <script src="./dashboard1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
