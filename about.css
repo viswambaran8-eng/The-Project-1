@@ -371,7 +371,7 @@ footer {
 
 .logo1 {
     height: 60px;
-    width: 300px;
+    width: 250px;
     object-fit: cover;
 }
 
@@ -463,7 +463,7 @@ footer {
     }
 
     .logo1 {
-        width: 350px;
+        width: 250px;
     }
 
     .set1,
@@ -900,10 +900,6 @@ footer {
   }
   .logo {
     width: 200px;
-  }
-
-  .logo1 {
-    width: 300px;
   }
   .footer-parent {
     padding: 0px;

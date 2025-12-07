@@ -344,7 +344,7 @@ header nav ul li a:hover::after {
         margin-left: auto;
     }
     .logo1 {
-        width: 300px;
+        width: 250px;
     }
     .nav-links {
         display: none;
@@ -392,7 +392,7 @@ header nav ul li a:hover::after {
     font-size: 12px;
 }
     .logo1 {
-        width: 300px;
+        width: 250px;
     }
     .the-image {
         display: flex;
@@ -431,7 +431,7 @@ header nav ul li a:hover::after {
         font-size: 26px;
     }
     .logo1 {
-        width: 300px;
+        width: 250px;
     }
         .the-header h2 {
         font-size: 24px;
