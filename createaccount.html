@@ -1,106 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric Battery Industry</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <style>
-        .flex {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="Header">
-        <nav>
-            <a href="#img">
-                <img class="logo" src="./Assets1/Stackly-blue-removebg-preview.png" alt="">
-            </a>
-            <ul class="nav-links">
-                <li class="dropdown"><a href="index.html" class="nav-link">Home <i
-                            class="fa-solid fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="index2.html">Home Page 2</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="./dsb1.html" class="nav-link">Dashboard</a></li>
-                <li><a href="addtocart.html" class="cta-button">Shop Now</a></li>
-            </ul>
-            <i class="fa-solid fa-bars" id="menu"></i>
-            <a href="login.html" class="anchor"><i class="fa-regular fa-circle-user" id="user">
-                    <p class="user-para">Login In</p>
-                </i></a>
-        </nav>
-    </div>
-    <aside class="mobileMenu">
-        <div class="menu-nav" id="mobileNav">
-            <div class="mobile-dropdown">
-                <a href="#" class="nav-link dropdown-toggle">
-                    Home <i class="fa-solid fa-caret-right"></i>
-                </a>
-                <ul type="none" class="dropdown-menu">
-                    <li><a href="index.html" class="nav-link">Home Page 1</a></li>
-                    <li><a href="index2.html" class="nav-link">Home Page 2</a></li>
-                </ul>
-            </div>
-
-            <a href="about.html" class="nav-link active">About</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-            <a href="./dsb1.html" class="nav-link">Dashboard</a>
-            <a href="addtocart.html" class="cta-button">Shop Now</a>
-
-            <a href="login.html" class="anchor1"><i class="fa-regular fa-circle-user" id="user">
-                    <p class="user-para">Login In</p>
-                </i></a>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./Assets1/Stackly-blue-removebg-preview.png" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li class="page">
+            <a href="./index.html">Home</a>
+            <i id="page" class="fa-solid fa-caret-down"></i>
+            <a class="drop_menu" href="./index2.html">Home 2</a>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+          <!-- <li><a href="#">Packages</a></li> -->
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./dsb1.html">Dashboard</a></li>
+          <li><a href="./addtocart.html">Shop Now</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <a href="./login.html"><i class="fa-regular fa-circle-user"></i></a>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
         </div>
-    </aside>
-    <div class="login-main">
-        <form method="get" action="./error.html" class="login">
-            <div>
-                <h1>
-                    SIGN UP
-                </h1>
-                <h2>
-                    Create Account to manage your events
-                </h2>
-            </div>
-            <input type="name" placeholder="Eg Jerry" required>
-            <input type="email" placeholder="you@123example.com" required>
-            <input type="password" placeholder="Enter your Password" required>
-            <input type="password" placeholder="Enter your Password" required>
-            <!-- <textarea rows="5" placeholder="Your Message"></textarea>   -->
-            <button class="cta-button" type="submit">Sign Up</button>
-            <button class="cta-button" type="reset">Reset</button>
-            <div class="flex" style="margin-top: 10px;">
-                <p>Already have an account? login in here</p>
-                <a href="./login.html" style="margin-left: 15px; color: palegreen;">
-                    Login Now
-                </a>
-            </div>
-        </form>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li>
+          <div class="flexdiv">
+            <a href="./index.html">Home </a>
+            <span class="dropdownArrow">&#9662;</span>
+          </div>
+          <ul class="submenu">
+            <li><a href="index2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+        <!-- <li><a href="./packages.html">Packages</a></li> -->
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./dsb1.html">Dashboard</a></li>
+          <li><a href="./addtocart.html">Shop Now</a></li>
+        <li><a href="./login.html">Sign In</a></li>
+      </ul>
     </div>
+    <section class="Table">
+      <div class="login-main" data-aos="fade-up">
+        <form id="form" method="get" action="./error.html" class="login">
+          <div>
+            <h1>SIGN UP</h1>
+            <h2>Create Account to manage your events</h2>
+          </div>
+          <input type="name" placeholder="Eg Jerry" required />
+          <input
+            id="inputEmail"
+            type="email"
+            placeholder="you@gmail.com"
+            required
+          />
+          <span id="span_email" class="span_email"></span>
+          <input
+            id="inputPassword"
+            type="password"
+            placeholder="Enter your Password"
+            required
+          />
+          <span id="span_password" class="span_password"></span>
+
+          <input
+            id="inputConfirm"
+            type="password"
+            placeholder="Confirm your Password"
+            required
+          />
+          <span id="span_confirm" class="span_confirm"></span>
+          <!-- <textarea rows="5" placeholder="Your Message"></textarea>   -->
+          <button class="cta-button" type="submit">Sign Up</button>
+          <button class="cta-button" type="reset">
+            <a href="./error.html">Reset</a>
+          </button>
+          <div class="flex" style="margin-top: 20px; padding: 10px">
+            <p>Already have an account? login in here</p>
+            <a
+              href="./sign-in.html"
+              style="
+                margin-left: 15px;
+                color: rgb(6, 107, 6);
+                text-decoration: none;
+                padding: 2px;
+              "
+            >
+              Login Now
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
     <script src="./script.js"></script>
     <script src="./script2.js"></script>
     <script src="./script10.js"></script>
     <script src="./script11.js"></script>
     <script src="./script12.js"></script>
-</body>
 
+    <script src="./sidebar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    <script>
+      //   Forms Page
+
+      const Email = document.getElementById("span_email");
+      const Password1 = document.getElementById("span_password");
+      const ConfirmPass = document.getElementById("span_confirm");
+
+      const Form = document.getElementById("form");
+      const InputEmail = document.getElementById("inputEmail");
+      const InputPassword = document.getElementById("inputPassword");
+      const InputConfirm = document.getElementById("inputConfirm");
+
+      Form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const emailvalue = InputEmail.value.trim();
+        const password2 = InputPassword.value.trim();
+        const confirmValue = InputConfirm.value.trim();
+
+        // Email check
+        const validEmail = emailvalue.endsWith("@gmail.com");
+
+        // Password checks
+        const hasUpper = /[A-Z]/.test(password2);
+        const hasLower = /[a-z]/.test(password2);
+        const hasNumber = /[0-9]/.test(password2);
+        const hasSpecial = /[!@#$%^&*(,.?:{}|<>]/.test(password2);
+        const ValidPassword = hasLower && hasUpper && hasNumber && hasSpecial;
+
+        // Email validation
+        if (!validEmail) {
+          Email.textContent =
+            "Please Enter a Valid Email ending with @gmail.com";
+          return;
+        } else {
+          Email.textContent = "";
+        }
+
+        // Password validation
+        if (!ValidPassword) {
+          Password1.textContent =
+            "Password must include uppercase, lowercase, number & special character";
+          return;
+        } else {
+          Password1.textContent = "";
+        }
+
+        // Confirm Password validation
+        if (password2 !== confirmValue) {
+          ConfirmPass.textContent = "Passwords do not match";
+          return;
+        } else {
+          ConfirmPass.textContent = "";
+        }
+
+        // Clear all messages
+        Email.textContent = "";
+        Password1.textContent = "";
+        ConfirmPass.textContent = "";
+
+        Form.reset();
+
+        window.location.href = "./error.html";
+      });
+    </script>
+  </body>
 </html>

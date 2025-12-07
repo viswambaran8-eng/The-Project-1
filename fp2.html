@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stackly-Electric Battery Industry</title>
-    <link rel="stylesheet" href="addtocart.css" />
+    <title>Electric Battery Industry</title>
+    <link rel="stylesheet" href="fp2.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,37 +12,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .flex1 {
+        display: flex;
+        flex-direction: column;
+        justify-items:center;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
   </head>
-
   <body>
-    <!-- Header -->
-    <header>
+        <header>
       <div class="logo">
-        <a href="./index.html">
+        <a href="./index2.html">
           <img src="./Assets1/Stackly-blue-removebg-preview.png" alt="" />
         </a>
       </div>
       <nav>
         <ul class="nav_links">
           <li class="page">
-            <a href="./index.html">Home</a>
+            <a href="./index2.html">Home</a>
             <i id="page" class="fa-solid fa-caret-down"></i>
-            <a class="drop_menu" href="./index2.html">Home 2</a>
+            <a class="drop_menu" href="./index.html">Home 1</a>
           </li>
-          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./about2.html">About Us</a></li>
           <!-- <li><a href="#">Packages</a></li> -->
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
-          <li><a href="./dsb1.html">Dashboard</a></li>
-          <li><a href="./addtocart.html">Shop Now</a></li>
+          <li><a href="./service2.html">Services</a></li>
+          <li><a href="./blog2.html">Blog</a></li>
+          <li><a href="./contact2.html">Contact Us</a></li>
+          <li><a href="./dsb2.html">Dashboard</a></li>
+          <li><a href="./shop2.html">Shop Now</a></li>
         </ul>
       </nav>
       <div class="icons">
-        <button id="cart-toggle">
-          🛒Cart(<span id="cart-count">0</span>)
-        </button>
-        <a href="./login.html"><i class="fa-regular fa-circle-user"></i></a>
+        <a href="./Login2.html"><i class="fa-regular fa-circle-user"></i></a>
         <div class="hamburger">
           <div class="lines"></div>
           <div class="lines"></div>
@@ -56,142 +60,47 @@
       <ul>
         <li>
           <div class="flexdiv">
-            <a href="./index.html">Home </a>
+            <a href="./index2.html">Home </a>
             <span class="dropdownArrow">&#9662;</span>
           </div>
           <ul class="submenu">
-            <li><a href="index2.html">Home 2</a></li>
+            <li><a href="index.html">Home 1</a></li>
           </ul>
         </li>
-        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./about2.html">About Us</a></li>
         <!-- <li><a href="./packages.html">Packages</a></li> -->
-        <li><a href="./services.html">Services</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-        <li><a href="./dsb1.html">Dashboard</a></li>
-          <li><a href="./addtocart.html">Shop Now</a></li>
-        <li><a href="./login.html">Sign In</a></li>
+        <li><a href="./service2.html">Services</a></li>
+        <li><a href="./blog2.html">Blog</a></li>
+        <li><a href="./contact2.html">Contact Us</a></li>
+        <li><a href="./dsb2.html">Dashboard</a></li>
+          <li><a href="./shop2.html">Shop Now</a></li>
+        <li><a href="./Login2.html">Sign In</a></li>
       </ul>
     </div>
-    <main class="shop">
-      <div class="product">
-        <img src="./Assets1/volt tester_11zon.webp" alt="" />
-        <h3>Volt Tester</h3>
-        <p>$15.00</p>
-        <button class="add-cart" data-name="Volt Tester" data-price="15">
-          Add to Cart
-        </button>
-      </div>
 
-      <div class="product">
-        <img
-          src="./Assets1/digital-battery-tester_11zon (1)_11zon.webp"
-          alt=""
-        />
-        <h3>Digital Battery Tester</h3>
-        <p>$25.00</p>
-        <button
-          class="add-cart"
-          data-name="Digital Battery Tester"
-          data-price="25"
-        >
-          Add to Cart
-        </button>
+    <section class="Table">
+      <div class="login-main" data-aos="fade-up">
+        <form id="form" method="get" action="./error.html" class="login">
+          <div>
+            <h1>Reset Password</h1>
+            <h2>Enter your email to reset Password</h2>
+          </div>
+          <input
+            id="inputEmail"
+            type="email"
+            placeholder="you@gmail.com"
+            required
+          />
+          <span id="span_email" class="span_email"></span>
+          <div class="flex1">
+            <button class="cta-button" type="submit">Reset</button>
+            <a class="cta-button1" href="./Login2.html">Back to Login</a>
+          </div>
+        </form>
       </div>
+    </section>
 
-      <div class="product">
-        <img
-          src="./Assets1/Dual connector_11zon (1)_11zon.webp"
-          alt="Battery 3"
-        />
-        <h3>Dual connector</h3>
-        <p>$40.00</p>
-        <button class="add-cart" data-name="Dual Connector" data-price="40">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/charging cable_11zon (1)_11zon.webp" alt="" />
-        <h3>Charging Cable</h3>
-        <p>$45.00</p>
-        <button class="add-cart" data-name="Charging Cable" data-price="45">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/CDI Ignition_11zon (1)_11zon.webp" alt="" />
-        <h3>CDI Ignition</h3>
-        <p>$50.00</p>
-        <button class="add-cart" data-name="CDI Ignition" data-price="50">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/inverter_11zon_11zon.webp" alt="" />
-        <h3>Inverter</h3>
-        <p>$55.00</p>
-        <button class="add-cart" data-name="Inverter" data-price="55">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/ev Adapter_11zon_11zon.webp" alt="" />
-        <h3>Ev Adapter</h3>
-        <p>$60.00</p>
-        <button class="add-cart" data-name="Ev Adapter" data-price="60">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/e-socket_11zon_11zon.webp" alt="" />
-        <h3>E-Socket</h3>
-        <p>$70.00</p>
-        <button class="add-cart" data-name="E-Socket" data-price="70">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/charging dock_11zon (1)_11zon.webp" alt="" />
-        <h3>Charging Dock</h3>
-        <p>$85.00</p>
-        <button class="add-cart" data-name="Charging Dock" data-price="85">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/ev charging dock_11zon (1)_11zon.webp" alt="" />
-        <h3>Ev Charging Dock</h3>
-        <p>$120.00</p>
-        <button class="add-cart" data-name="Ev Charging Dock" data-price="120">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/evscooter_11zon_11zon.webp" alt="" />
-        <h3>Ev Scooter</h3>
-        <p>$180.00</p>
-        <button class="add-cart" data-name="Ev Scooter" data-price="180">
-          Add to Cart
-        </button>
-      </div>
-      <div class="product">
-        <img src="./Assets1/ev motor bike_11zon_11zon.webp" alt="" />
-        <h3>Ev Motor Bike</h3>
-        <p>$250.00</p>
-        <button class="add-cart" data-name="Ev Motor Bike" data-price="250">
-          Add to Cart
-        </button>
-      </div>
-    </main>
-
-    <aside class="cart" id="cart">
-      <!-- <h2>Your Cart</h2><button id="remove">X</button> -->
-      <ul id="cart-items"></ul>
-      <p class="total">Total: $<span id="cart-total">0.00</span></p>
-      <button id="checkout">Checkout</button>
-    </aside>
-
-    <footer>
+        <footer>
       <div class="footer-parent">
         <div class="set1">
           <img
@@ -249,10 +158,10 @@
           <h2 class="footer-header">Quick Links</h2>
           <ul class="footer-ul">
             <li class="footer-li">
-              <a href="about.html">--About Us</a>
-              <a href="services.html">--Services</a>
-              <a href="blog.html">--Blog</a>
-              <a href="contact.html">--Contact</a>
+              <a href="about2.html">--About Us</a>
+              <a href="service2.html">--Services</a>
+              <a href="blog2.html">--Blog</a>
+              <a href="contact2.html">--Contact</a>
             </li>
           </ul>
         </div>
@@ -272,12 +181,64 @@
         </div>
       </div>
     </footer>
+
+  </body>
+      <script src="./sidebar.js"></script>
     <script src="./script.js"></script>
     <script src="./script2.js"></script>
-    <script src="./sidebar.js"></script>
+    <script src="./script10.js"></script>
+    <script src="./script11.js"></script>
+    <script src="./script12.js"></script>
 
-    <!-- <script src="./script10.js"></script> -->
-    <!-- <script src="./script11.js"></script> -->
-    <!-- <script src="./script12.js"></script> -->
-  </body>
+          <script>
+    //   Forms Page
+
+    const Email = document.getElementById("span_email");
+    // const Password1 = document.getElementById("span_password");
+    //   const spError = document.getElementById("span_error");
+    const Form = document.getElementById("form");
+    const InputEmail = document.getElementById("inputEmail");
+    // const InputPassword = document.getElementById("inputPassword");
+
+    Form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const emailvalue = InputEmail.value.trim();
+      // const password2 = InputPassword.value;
+
+      const validEmail = emailvalue.endsWith("@gmail.com");
+
+      // const hasUpper = /[A-Z]/.test(password2);
+      // const hasLower = /[a-z]/.test(password2);
+      // const hasNumber = /[0-9]/.test(password2);
+      // const hasSpecial = /[!@#$%^&*(,.?:{}|<>]/.test(password2);
+      // const ValidPassword = hasLower && hasUpper && hasNumber && hasSpecial;
+
+      if (!validEmail) {
+        Email.textContent =
+          "Please Enter Valid Email Id ending with @gmail.com";
+        return;
+      }
+
+      if (validEmail) {
+        Email.textContent = "";
+      }
+
+      // if (!ValidPassword) {
+      //   Password1.textContent =
+      //     "Enter with Special character , number , uppercase and lowercase (eg:H,@,9,h)";
+      //   return;
+      // }
+
+      // if (ValidPassword) {
+      //   Password1.textContent = "";
+      // }
+
+      Email.textContent = "";
+      // Password1.textContent = "";
+      Form.reset();
+
+      window.location.href = "./error.html";
+    });
+  </script>
 </html>

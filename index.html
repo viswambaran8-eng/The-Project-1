@@ -9,59 +9,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <!-- <div class="geometric-bg"></div> -->
-<div class="Header">
-    <nav>
-        <a href="#img">
-            <img class="logo" src="./Assets1/Stackly-blue-removebg-preview.png" alt="">
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./Assets1/Stackly-blue-removebg-preview.png" alt="" />
         </a>
-        <ul class="nav-links">
-            <li class="dropdown">
-                <a href="#" class="nav-link active">Home <i class="fa-solid fa-caret-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="index2.html">Home Page 2</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="blog.html" class="nav-link">Blog</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-            <li><a href="./dsb1.html" class="nav-link">Dashboard</a></li>
-            <li><a href="addtocart.html" class="cta-button">Shop Now</a></li>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li class="page">
+            <a href="./index.html">Home</a>
+            <i id="page" class="fa-solid fa-caret-down"></i>
+            <a class="drop_menu" href="./index2.html">Home 2</a>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+          <!-- <li><a href="#">Packages</a></li> -->
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./dsb1.html">Dashboard</a></li>
+          <li><a href="./addtocart.html">Shop Now</a></li>
         </ul>
-
-        <i class="fa-solid fa-bars" id="menu"></i>
-        <a href="login.html" class="anchor">
-            <i class="fa-regular fa-circle-user" id="user">
-            <p class="user-para">Login In</p></i>
-        </a>
-    </nav>
-</div>
-    <aside class="mobileMenu">
-        <div class="menu-nav" id="mobileNav">
-            <div class="mobile-dropdown">
-                <a href="#" class="nav-link dropdown-toggle">
-                    Home <i class="fa-solid fa-caret-right"></i>
-                </a>
-                <ul type="none" class="dropdown-menu">
-                    <li><a href="index.html" class="nav-link">Home Page 1</a></li>
-                    <li><a href="index2.html" class="nav-link">Home Page 2</a></li>
-                </ul>
-            </div>
-
-            <a href="about.html" class="nav-link">About</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-            <a href="./dsb1.html" class="nav-link">Dashboard</a>
-            <a href="addtocart.html" class="cta-button">Shop Now</a>
-
-            <a href="login.html" class="anchor1"><i class="fa-regular fa-circle-user" id="user"><p class="user-para">Login In</p></i></a>
+      </nav>
+      <div class="icons">
+        <a href="./login.html"><i class="fa-regular fa-circle-user"></i></a>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
         </div>
-    </aside>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li>
+          <div class="flexdiv">
+            <a href="./index.html">Home </a>
+            <span class="dropdownArrow">&#9662;</span>
+          </div>
+          <ul class="submenu">
+            <li><a href="index2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+        <!-- <li><a href="./packages.html">Packages</a></li> -->
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./dsb1.html">Dashboard</a></li>
+          <li><a href="./addtocart.html">Shop Now</a></li>
+        <li><a href="./login.html">Sign In</a></li>
+      </ul>
+    </div>
+
     <!--  Enhanced Background -->
     <section id="img">
         <div class="network-bg">
@@ -128,7 +135,7 @@
         </div>
     </section>
     <div class="animate">
-        <div class="a-img1">
+        <div class="a-img1" data-aos="fade-left" >
             <img class="vd1" src="./Assets1/electric-vehicle-charger-plug-with-digital-display_11zon_11zon.webp" alt="">
             <p class="img-content1">The electric battery industry is at the forefront of the global transition to clean
                 energy. It plays a crucial role in powering electric vehicles, renewable energy storage systems, and
@@ -137,7 +144,7 @@
                 faster
                 charging, and longer life cycles.</p>
         </div>
-         <div class="a-img2">
+         <div class="a-img2"  data-aos="fade-right">
             <p class="img-content2">The electric battery industry is a key driver of the global transition to clean
                 energy,
                 enabling the widespread use of electric vehicles and renewable power systems. By combining solar energy
@@ -148,7 +155,7 @@
                 alt="">
             
         </div>
-        <div class="a-img3">
+        <div class="a-img3"  data-aos="fade-left">
             <img class="vd3" src="./Assets1/man-charging-his-electric-car-charge-station-using-smartphone_11zon (1)_11zon.webp" alt="">
             <p class="img-content3">The electric battery industry is transforming the global energy and transportation
                 landscape. It focuses on the design, production, renewable energy grids, and smart technologies which
@@ -160,38 +167,37 @@
         <div class="r-home">
             <div class="r-content">
                 <div class="r-img">
-                    <img class="image" src="./Assets1/car-battery-svgrepo-com_11zon_11zon.webp" alt="">
+                  <i class="fa-solid fa-car-battery"></i>
                 </div>
                 <p>A car battery stores and supplies power for electric vehicles, enabling efficient, sustainable, and
                     eco-friendly transportation.</p>
             </div>
             <div class="r-content">
                 <div class="r-img">
-                    <img class="image" src="./Assets1/electric-car-svgrepo-com_11zon_11zon.webp" alt="">
+                    <i class="fa-solid fa-heart-circle-bolt"></i>
                 </div>
                 <p>An electric vehicle (EV) runs on battery power instead of fuel, reducing emissions and supporting
-                    clean, energy-efficient mobility.</p>
+                    clean,efficient mobility.</p>
             </div>
             <div class="r-content">
                 <div class="r-img">
-                    <img class="image" src="./Assets1/ecological-solar-power-for-a-battery-svgrepo-com_11zon (1)_11zon.webp" alt="">
+                    <i class="fa-solid fa-solar-panel"></i>
                 </div>
                 <p>Ecological solar power uses sunlight to charge batteries, promoting renewable energy, reducing carbon
-                    impact, and supporting sustainable.</p>
+, and supporting sustainable.</p>
             </div>
             <div class="r-content">
                 <div class="r-img">
-                    <img class="image" src="./Assets1/electric-car-charging-station-renewable-energy-svgrepo-com_11zon_11zon.webp"
-                        alt="">
+                    <i class="fa-solid fa-sun"></i>
                 </div>
-                <p>Renewable-energy-powered EV charging stations provide clean electricity for vehicles, enhancing
+                <p>Renewable-energy-powered EV charging stations provide clean , enhancing
                     sustainability and advancing the green battery industry.</p>
             </div>
             <div class="r-content">
                 <div class="r-img">
-                    <img class="image" src="./Assets1/electric-station-fuel-svgrepo-com_11zon_11zon.webp" alt="">
+                    <i class="fa-solid fa-charging-station"></i>
                 </div>
-                <p>Electric station fuel supplies power for charging EV batteries, replacing traditional fuels and
+                <p>Electric station fuel supplies power for charging EV batteries, replacing  fuels and
                     promoting clean, sustainable energy use.</p>
             </div>
         </div>
@@ -202,7 +208,7 @@
                 <p>--We Provide the Best Service for Electric Stuffs--</p>
             </div>
             <div class="boxes">
-                <div class="services">
+                <div class="services"  data-aos="fade-up">
                     <div class="service-sections">
                         <img src="./Assets1/Home-charging_11zon_11zon.webp" alt="">
                     </div>
@@ -213,7 +219,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="services">
+                <div class="services"  data-aos="fade-up">
                     <div class="service-sections">
                         <img src="./Assets1/Public stations_11zon.webp" alt="">
                     </div>
@@ -223,7 +229,7 @@
                             infrastructure, supporting long-distance travel and accelerating the global shift.</p>
                     </div>
                 </div>
-                <div class="services">
+                <div class="services"  data-aos="fade-up">
                     <div class="service-sections">
                         <img src="./Assets1/Commercial Solar Canopy EV Charging Equipment_11zon_11zon.webp" alt="">
                     </div>
@@ -234,7 +240,7 @@
                             stability.</p>
                     </div>
                 </div>
-                <div class="services">
+                <div class="services"  data-aos="fade-up">
                     <div class="service-sections">
                         <img src="./Assets1/hybrid watches_11zon_11zon.webp" alt="">
                     </div>
@@ -245,7 +251,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="services">
+                <div class="services"  data-aos="fade-up">
                     <div class="service-sections">
                         <img src="./Assets1/ev_11zon_11zon.webp" alt="">
                     </div>
@@ -255,7 +261,7 @@
                             promoting clean mobility, user friendly ,it aslo  electric transportation adoption.</p>
                     </div>
                 </div>
-                <div class="services">
+                <div class="services"  data-aos="fade-up">
                     <div class="service-sections">
                         <img src="./Assets1/woman-charging-her-electric-car-with-charging-pistol_11zon_11zon.webp" alt="">
                     </div>
@@ -326,6 +332,17 @@
     <script src="./script10.js"></script>
     <script src="./script11.js"></script>
     <script src="./script12.js"></script>
+
+    
+    <script src="./sidebar.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  </script>
 </body>
 
 </html>

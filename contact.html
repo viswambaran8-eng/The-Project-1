@@ -13,51 +13,60 @@
 </head>
 
 <body>
-<div class="Header">
-        <nav>
-            <a href="#img">
-                <img class="logo" src="./Assets1/Stackly-blue-removebg-preview.png" alt="">
-            </a>
-            <ul class="nav-links">
-                <li class="dropdown"><a href="index.html" class="nav-link">Home <i class="fa-solid fa-caret-down"></i></a>
-                    <ul  class="dropdown-menu">
-                        <li>
-                            <a href="index2.html">Home Page 2</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                <li><a href="./dsb1.html" class="nav-link">Dashboard</a></li>
-                <li><a href="addtocart.html" class="cta-button">Shop Now</a></li>
-            </ul>
-            <i class="fa-solid fa-bars" id="menu"></i>
-            <a href="login.html" class="anchor"><i class="fa-regular fa-circle-user" id="user"><p class="user-para">Login In</p></i></a>
-        </nav>
-    </div>
-    <aside class="mobileMenu">
-        <div class="menu-nav" id="mobileNav">
-            <div class="mobile-dropdown">
-                <a href="#" class="nav-link dropdown-toggle">
-                    Home <i class="fa-solid fa-caret-right"></i>
-                </a>
-                <ul type="none" class="dropdown-menu">
-                    <li><a href="index.html" class="nav-link">Home Page 1</a></li>
-                    <li><a href="index2.html" class="nav-link">Home Page 2</a></li>
-                </ul>
-            </div>
-
-            <a href="about.html" class="nav-link active">About</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-            <a href="./dsb1.html" class="nav-link">Dashboard</a>
-            <a href="addtocart.html" class="cta-button">Shop Now</a>
-            <a href="login.html" class="anchor1"><i class="fa-regular fa-circle-user" id="user"><p class="user-para">Login In</p></i></a>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./Assets1/Stackly-blue-removebg-preview.png" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li class="page">
+            <a href="./index.html">Home</a>
+            <i id="page" class="fa-solid fa-caret-down"></i>
+            <a class="drop_menu" href="./index2.html">Home 2</a>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+          <!-- <li><a href="#">Packages</a></li> -->
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./dsb1.html">Dashboard</a></li>
+          <li><a href="./addtocart.html">Shop Now</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <a href="./login.html"><i class="fa-regular fa-circle-user"></i></a>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
         </div>
-    </aside>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li>
+          <div class="flexdiv">
+            <a href="./index.html">Home </a>
+            <span class="dropdownArrow">&#9662;</span>
+          </div>
+          <ul class="submenu">
+            <li><a href="index2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+        <!-- <li><a href="./packages.html">Packages</a></li> -->
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./dsb1.html">Dashboard</a></li>
+          <li><a href="./addtocart.html">Shop Now</a></li>
+        <li><a href="./login.html">Sign In</a></li>
+      </ul>
+    </div>
 <section class="contact-section">
 	<h2>Get in Touch</h2>
 	<p>We’re powering the future of electric mobility to Make Green and Clean Earth — let’s connect!</p>
@@ -78,7 +87,7 @@
 		</div>
 	</div>
 
-	<form class="contact-form">
+	<form method="get" action="./error.html" class="contact-form">
 		<input type="text" placeholder="Your Name" required>
 		<input type="email" placeholder="Your Email" required>
 		<textarea rows="5" placeholder="Your Message"></textarea>
@@ -142,6 +151,16 @@
     <script src="./script10.js"></script>
     <script src="./script11.js"></script>
     <script src="./script12.js"></script>
+
+        <script src="./sidebar.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  </script>
 </body>
 
 </html>

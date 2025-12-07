@@ -14,184 +14,181 @@
 </head>
 
 <body>
-    <div class="Header">
-        <nav>
-            <a href="#img">
-                <img class="logo" src="./Assets1/Stackly-blue-removebg-preview.png" alt="">
-            </a>
-            <ul class="nav-links">
-                <li class="dropdown"><a href="index2.html" class="nav-link">Home <i
-                            class="fa-solid fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="index.html">Home Page 1</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="./about2.html" class="nav-link">About</a></li>
-                <li><a href="./service2.html" class="nav-link">Services</a></li>
-                <li><a href="./blog2.html" class="nav-link">Blog</a></li>
-                <li><a href="./contact2.html" class="nav-link">Contact</a></li>
-                <li><a href="./dsb2.html" class="nav-link active">Dashboard</a></li>
-                <li><a href="./shop2.html" class="cta-button">Shop Now</a></li>
-            </ul>
-            <i class="fa-solid fa-bars" id="menu"></i>
-            <a href="./Login2.html" class="anchor"><i class="fa-regular fa-circle-user" id="user">
-                    <p class="user-para">Login In</p>
-                </i></a>
-        </nav>
+    <header>
+      <div class="logo">
+        <a href="./index2.html">
+          <img src="./Assets1/Stackly-blue-removebg-preview.png" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li class="page">
+            <a href="./index2.html">Home</a>
+            <i id="page" class="fa-solid fa-caret-down"></i>
+            <a class="drop_menu" href="./index.html">Home 1</a>
+          </li>
+          <li><a href="./about2.html">About Us</a></li>
+          <!-- <li><a href="#">Packages</a></li> -->
+          <li><a href="./service2.html">Services</a></li>
+          <li><a href="./blog2.html">Blog</a></li>
+          <li><a href="./contact2.html">Contact Us</a></li>
+          <li><a href="./dsb2.html">Dashboard</a></li>
+          <li><a href="./shop2.html">Shop Now</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <a href="./Login2.html"><i class="fa-regular fa-circle-user"></i></a>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li>
+          <div class="flexdiv">
+            <a href="./index2.html">Home </a>
+            <span class="dropdownArrow">&#9662;</span>
+          </div>
+          <ul class="submenu">
+            <li><a href="index.html">Home 1</a></li>
+          </ul>
+        </li>
+        <li><a href="./about2.html">About Us</a></li>
+        <!-- <li><a href="./packages.html">Packages</a></li> -->
+        <li><a href="./service2.html">Services</a></li>
+        <li><a href="./blog2.html">Blog</a></li>
+        <li><a href="./contact2.html">Contact Us</a></li>
+        <li><a href="./dsb2.html">Dashboard</a></li>
+          <li><a href="./shop2.html">Shop Now</a></li>
+        <li><a href="./Login2.html">Sign In</a></li>
+      </ul>
     </div>
-        <aside class="mobileMenu">
-        <div class="menu-nav" id="mobileNav">
-            <div class="mobile-dropdown">
-                <a href="#" class="nav-link dropdown-toggle">
-                    Home <i class="fa-solid fa-caret-right"></i>
-                </a>
-                <ul type="none" class="dropdown-menu">
-                    <li><a href="index.html" class="nav-link">Home Page 1</a></li>
-                    <li><a href="index2.html" class="nav-link">Home Page 2</a></li>
-                </ul>
-            </div>
+<section class="grid">
+  <!-- KPI CARD -->
+  <div class="card col-4">
+    <div class="kpi">
+      <div>
+        <div class="meta">Total Cells Manufactured (Monthly)</div>
+        <div class="value" id="visitorsTotal"></div>
+      </div>
+      <div style="text-align: right">
+        <div class="meta">Avg Yield Rate</div>
+        <div class="value">96.4%</div>
+      </div>
+    </div>
+    <div class="small-list">
+      <div>
+        <span class="meta">Major Shipments</span><strong>USA, Germany, Japan</strong>
+      </div>
+      <div>
+        <span class="meta">Peak Output Months</span><strong>Jun–Aug</strong>
+      </div>
+      <div>
+        <span class="meta">Cell Quality Index</span><strong>9.2 / 10</strong>
+      </div>
+    </div>
+  </div>
 
-            <a href="./about2.html" class="nav-link">About</a>
-            <a href="./service2.html" class="nav-link">Services</a>
-            <a href="./blog2.html" class="nav-link">Blog</a>
-            <a href="./contact2.html" class="nav-link">Contact</a>
-            <a href="./dsb2.html" class="nav-link active">Dashboard</a>
-            <a href="./shop2.html" class="cta-button">Shop Now</a>
+  <!-- UTILIZATION DONUT -->
+  <div class="card col-4">
+    <div class="meta">Plant Utilization</div>
+    <div class="chart-box">
+      <div>
+        <div class="value" id="occupancy">84%</div>
+        <div class="sub">Lines: LFP • NMC • Solid-State</div>
+      </div>
+      <canvas id="occupancyDonut" style="max-width: 220px; max-height: 220px"></canvas>
+    </div>
+    <div class="small-list">
+      <div><span class="meta">Primary Demand Sources</span></div>
+      <div><strong>EV 60% • ESS 27% • Consumer 13%</strong></div>
+    </div>
+  </div>
 
-            <a href="./Login2.html" class="anchor1"><i class="fa-regular fa-circle-user" id="user">
-                    <p class="user-para">Login In</p>
-                </i></a>
-        </div>
-    </aside>
-    <main class="dsb1">
-        <div class="table1">
-            <div class="boxes">
-                <h3>Total Batteries Produced</h3>
-                <p>125,000 units</p>
-            </div>
-            <div class="boxes">
-                <h3>Active Installations</h3>
-                <p>86000</p>
-            </div>
-            <div class="boxes">
-                <h3>Battery Efficiency Average</h3>
-                <p>94.8%</p>
-            </div>
-            <div class="boxes">
-                <h3>Defective Rate</h3>
-                <p>1.2%</p>
-            </div>
-            <div class="boxes">
-                <h3>Average Energy Density</h3>
-                <p>260 Wh/kg</p>
-            </div>
-        </div>
+  <!-- MONTHLY REVENUE -->
+  <div class="card col-4">
+    <div class="meta">Monthly Revenue</div>
+    <div class="kpi">
+      <div>
+        <div class="value" id="revenue">$5.1M</div>
+        <div class="meta">Streams: EV • ESS • Grid Storage • R&D</div>
+      </div>
+      <div>
+        <div class="meta">Revenue / Cell</div>
+        <div class="value">$22.41</div>
+      </div>
+    </div>
+    <canvas id="revenueBar" class="chart-wrap"></canvas>
+  </div>
 
-        <div class="table2">
-            <div class="container1">
-                <canvas id="myChart1"></canvas>
-            </div>
-            <div class="container2">
-                <canvas id="myChart2"></canvas>
-            </div>
-        </div>
+  <!-- PRODUCTION TREND -->
+  <div class="card col-8">
+    <div class="row-head">
+      <strong>Manufacturing Trend</strong>
+      <span class="badge">LFP • NMC • Solid-State</span>
+    </div>
+    <canvas id="visitorsLine" class="chart-wrap"></canvas>
+  </div>
 
-        <div class="table3">
-            <div class="Box">
-                <div class="head">
-                    <h2>Charging Stations</h2>
-                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
-                </div>
-                <div class="module">
-                    <div class="content">
-                        <h2>Total</h2>
-                        <p>235</p>
-                    </div>
-                    <div class="content">
-                        <h2>Online</h2>
-                        <p>92%</p>
-                    </div>
-                    <div class="content">
-                        <h2>Offline</h2>
-                        <p>8%</p>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="content">
-                        <h2>Available</h2>
-                        <p>145</p>
-                    </div>
-                    <div class="content">
-                        <h2>In Use</h2>
-                        <p>65</p>
-                    </div>
-                    <div class="content">
-                        <h2>Unavailable</h2>
-                        <p>15</p>
-                    </div>
-                </div>
-                <div class="chart4">
-                    <canvas id="mychart4" style="max-height: 350px;object-fit: contain; "></canvas>
-                </div>
-            </div>
-            <div class="Box">
-                <div class="head">
-                    <h2>Charging Information</h2>
-                    <h2>History</h2>
-                </div>
-                <div class="module">
-                    <div class="Basket">
-                        <p><i style="color: purple;" class="fa-solid fa-battery-three-quarters"></i></p>
-                        <h2>Percentage</h2>
-                        <p>76%</p>
-                    </div>
-                    <div class="Basket">
-                        <h2>28 Jan'24</h2>
-                        <p>50 min</p>
-                        <p><i style="color: white; background-color: darkgreen;" class="fa-solid fa-bolt"></i>52 KWH</p>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="Basket">
-                        <p><i style="color: gold;" class="fa-solid fa-bolt"></i></p>
-                        <h2>KWH</h2>
-                        <p>76%</p>
-                    </div>
-                    <div class="Basket">
-                        <h2>15 Mar'24</h2>
-                        <p>80 min</p>
-                        <p><i style="color: white; background-color: darkgreen;" class="fa-solid fa-bolt"></i>60 KWH</p>
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="Basket">
-                        <p><i style="color: rgb(226, 9, 129);" class="fa-solid fa-dollar-sign"></i></p>
-                        <h2>Total</h2>
-                        <p>$765</p>
-                    </div>
-                    <div class="Basket">
-                        <h2>12 Aug'24</h2>
-                        <p>120 min</p>
-                        <p><i style="color: white; background-color: darkgreen;" class="fa-solid fa-bolt"></i>45 KWH</p>
-                    </div>
-                </div>
-            </div>
-            <div class="Box">
-                <div class="head">
-                    <h2>Energy & Time<i
-                            style="background-color: rgb(216, 209, 209); color: rgb(30, 77, 93);; border-radius: 50%; margin-top: 0px; padding-top: 2px;"
-                            class="fa-solid fa-info"></i></h2>
-                    <h2>Average Cost</h2>
-                </div>
-                <div class="chart">
-                    <canvas id="myChart3"></canvas>
-                </div>
-            </div>
-        </div>
-        </div>
-    </main>
+  <!-- TOP CELL TYPES + EVENTS -->
+  <div class="card col-4">
+    <strong>Top Battery Chemistries</strong>
+    <div class="small-list">
+      <div><span class="meta">1. LFP Cells</span><span>High cycle life & safety</span></div>
+      <div><span class="meta">2. NMC Cells</span><span>High energy density</span></div>
+      <div><span class="meta">3. Solid-State Cells</span><span>Next-gen efficiency</span></div>
+      <div><span class="meta">4. Sodium-Ion Cells</span><span>Low-cost alternative</span></div>
+    </div>
+    <hr />
+    <strong>Industry Conferences</strong>
+    <table>
+      <thead>
+        <tr><th>Event</th><th>Date</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Battery World Expo</td><td>Mar 10</td></tr>
+        <tr><td>EV Innovation Summit</td><td>Apr 22</td></tr>
+        <tr><td>Global Energy Forum</td><td>May 15</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- QUALITY & PERFORMANCE -->
+  <div class="card col-6">
+    <strong>Performance Metrics</strong>
+    <div class="sub">Safety, speed & durability</div>
+    <div class="two-col-gap">
+      <div>
+        <div class="meta">Avg Safety Score</div>
+        <div class="value">4.8 / 5</div>
+        <div class="meta">Strengths: Thermal control, efficiency, charge cycles</div>
+      </div>
+      <canvas id="sentimentRadar"></canvas>
+    </div>
+  </div>
+
+  <!-- MOST ORDERED PRODUCTS -->
+  <div class="card col-6">
+    <strong>Most Ordered Units</strong>
+    <table>
+      <thead>
+        <tr><th>Product</th><th>Avg Price</th><th>Orders</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>LFP Packs</td><td>$210</td><td>12,900</td></tr>
+        <tr><td>NMC Modules</td><td>$340</td><td>8,400</td></tr>
+        <tr><td>Portable Energy Cells</td><td>$70</td><td>18,300</td></tr>
+        <tr><td>Grid-Storage Racks</td><td>$500</td><td>5,100</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
     <footer>
         <div class="table4">
             <h2 style="color: #204f1f;">© Electric Battery Industry All Rights Reserved.</h2>
@@ -205,5 +202,7 @@
     <script src="./script10.js"></script>
     <script src="./script11.js"></script>
     <script src="./script12.js"></script>
+    <script src="./sidebar.js"></script>
+
 </body>
 </html>

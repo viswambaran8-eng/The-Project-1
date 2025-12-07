@@ -14,57 +14,60 @@
 
 <body>
     <!-- Header -->
-    <div class="Header">
-        <nav>
-            <a href="#img">
-                <img class="logo" src="./Assets1/Stackly-blue-removebg-preview.png" alt="">
-            </a>
-            <ul class="nav-links">
-                <li class="dropdown"><a href="index.html" class="nav-link ">Home <i
-                            class="fa-solid fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="index2.html">Home Page 2</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="blog.html" class="nav-link active">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="./dsb1.html" class="nav-link">Dashboard</a></li>
-                <li><a href="addtocart.html" class="cta-button">Shop Now</a></li>
-            </ul>
-            <i class="fa-solid fa-bars" id="menu"></i>
-            <a href="login.html" class="anchor"><i class="fa-regular fa-circle-user" id="user">
-                    <p class="user-para">Login In</p>
-                </i></a>
-        </nav>
-    </div>
-    <aside class="mobileMenu">
-        <div class="menu-nav" id="mobileNav">
-            <div class="mobile-dropdown">
-                <a href="#" class="nav-link dropdown-toggle">
-                    Home <i class="fa-solid fa-caret-right"></i>
-                </a>
-                <ul type="none" class="dropdown-menu">
-                    <li><a href="index.html" class="nav-link">Home Page 1</a></li>
-                    <li><a href="index2.html" class="nav-link">Home Page 2</a></li>
-                </ul>
-            </div>
-
-            <a href="about.html" class="nav-link ">About</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="blog.html" class="nav-link active">Blog</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-            <a href="./dsb1.html" class="nav-link">Dashboard</a>
-            <a href="addtocart.html" class="cta-button">Shop Now</a>
-
-            <a href="login.html" class="anchor1"><i class="fa-regular fa-circle-user" id="user">
-                    <p class="user-para">Login In</p>
-                </i></a>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./Assets1/Stackly-blue-removebg-preview.png" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li class="page">
+            <a href="./index.html">Home</a>
+            <i id="page" class="fa-solid fa-caret-down"></i>
+            <a class="drop_menu" href="./index2.html">Home 2</a>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+          <!-- <li><a href="#">Packages</a></li> -->
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./dsb1.html">Dashboard</a></li>
+          <li><a href="./addtocart.html">Shop Now</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <a href="./login.html"><i class="fa-regular fa-circle-user"></i></a>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
         </div>
-    </aside>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li>
+          <div class="flexdiv">
+            <a href="./index.html">Home </a>
+            <span class="dropdownArrow">&#9662;</span>
+          </div>
+          <ul class="submenu">
+            <li><a href="index2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+        <!-- <li><a href="./packages.html">Packages</a></li> -->
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./dsb1.html">Dashboard</a></li>
+          <li><a href="./addtocart.html">Shop Now</a></li>
+        <li><a href="./login.html">Sign In</a></li>
+      </ul>
+    </div>
     <!-- Bg Section -->
     <section id="Blog">
         <div class="Blog">
@@ -100,12 +103,12 @@
                     smart features such as timers, Wi-Fi connectivity, and energy tracking. DC Fast Charging, typically
                     used in commercial setups, delivers rapid power directly to the vehicle’s battery but is costly and
                     not ideal for standard residential use.</p>
-                <p class="lede">A transformative trend in the electric battery industry is the integration of home
+                <!-- <p class="lede">A transformative trend in the electric battery industry is the integration of home
                     charging with renewable energy sources, particularly solar power. By combining solar panels, energy
                     storage systems, and EV chargers, households can create a self-sustaining energy loop — generating,
                     storing, and using their own electricity. Emerging technologies such as vehicle-to-home (V2H) and
                     vehicle-to-grid (V2G) enable EV batteries to supply power back to homes or the grid during peak
-                    demand, enhancing energy efficiency and grid stability.</p>
+                    demand, enhancing energy efficiency and grid stability.</p> -->
                 <p class="small" style="margin-top:12px">Published: <strong>October 2025</strong> • Estimated read:
                     <strong>8-10 minutes</strong>
                 </p>
@@ -124,11 +127,11 @@
                     those without private parking or home charging setups. These networks form the backbone of the EV
                     ecosystem, ensuring that drivers can recharge anywhere—whether at highways, shopping centers,
                     workplaces, or urban hubs.</p>
-                <p class="lede">The electric battery industry continuously enhances these networks through innovations
+                <!-- <p class="lede">The electric battery industry continuously enhances these networks through innovations
                     in battery management systems (BMS), smart grid integration, and payment technologies. Many public
                     chargers now feature digital platforms that allow users to locate stations, check availability, and
                     make contactless payments. Renewable energy integration—such as solar-powered charging hubs—also
-                    supports sustainability goals by reducing the carbon footprint of electricity use.</p>
+                    supports sustainability goals by reducing the carbon footprint of electricity use.</p> -->
                 <p class="lede">DC fast chargers, on the other hand, deliver high power directly to the vehicle’s
                     battery, charging most EVs up to 80% in less than 40 minutes. This rapid capability is essential for
                     intercity travel and commercial fleets.Furthermore, partnerships between governments, automakers,
@@ -154,11 +157,11 @@
                     buildings, factories, EV fleets, and renewable power plants. By combining advanced battery storage
                     technologies with intelligent energy management, commercial systems help businesses reduce costs,
                     enhance energy reliability, and minimize environmental impact.</p>
-                <p class="lede">At the core of these systems are high-capacity lithium-ion or solid-state batteries,
+                <!-- <p class="lede">At the core of these systems are high-capacity lithium-ion or solid-state batteries,
                     which store electricity during low-demand periods and release it when consumption peaks. This
                     process, known as peak shaving, helps reduce grid strain and lowers electricity costs. Commercial
                     battery systems also support backup power, ensuring uninterrupted operations during outages, which
-                    is critical for hospitals, data centers, and industrial facilities.</p>
+                    is critical for hospitals, data centers, and industrial facilities.</p> -->
                 <p class="lede">Integration with renewable energy sources such as solar and wind further strengthens
                     sustainability efforts. Excess renewable energy can be stored in battery units and used later,
                     promoting efficient resource utilization. Modern commercial systems employ smart energy management
@@ -194,14 +197,14 @@
                     Beyond power efficiency, these cars emphasize design, digital connectivity, and driver comfort.
                     Features such as AI-assisted navigation, regenerative braking, and smart energy recovery systems
                     reflect how the electric battery industry is shaping modern automotive engineering.</p>
-                <p class="lede">The rise of compact executive EVs also drives growth across related sectors — including
+                <!-- <p class="lede">The rise of compact executive EVs also drives growth across related sectors — including
                     charging infrastructure, energy storage solutions, and smart grid integration. Manufacturers are
                     increasingly focusing on recyclable batteries and eco-friendly production methods to minimize the
                     environmental impact of vehicle manufacturing and disposal.In conclusion, compact executive electric
                     cars symbolize the perfect balance between performance, sophistication, and sustainability. They
                     highlight the electric battery industry’s progress in delivering efficient, stylish, and intelligent
                     vehicles that cater to professionals and urban drivers seeking green mobility without compromise.
-                </p>
+                </p> -->
                 <p class="small" style="margin-top:12px">Published: <strong>October 2025</strong> • Estimated read:
                     <strong>8-10 minutes</strong>
                 </p>
@@ -230,14 +233,14 @@
                     predictive maintenance, and dynamic pricing. Networked chargers allow users to locate available
                     stations, schedule charging, and make digital payments through mobile applications. The adoption of
                     AI and IoT-based management systems ensures optimal energy distribution and minimizes downtime.</p>
-                <p class="lede">Government policies and industry collaboration play a vital role in expanding EV
+                <!-- <p class="lede">Government policies and industry collaboration play a vital role in expanding EV
                     charging networks. Incentives, public-private partnerships, and standardization of charging
                     connectors help create a seamless charging experience across regions.
 
                     In conclusion, EV charging point planning is central to the success of the electric battery
                     industry. Through intelligent design, smart technology, and sustainable energy integration, it
                     enables a reliable infrastructure that powers the global transition toward cleaner and smarter
-                    electric mobility.</p>
+                    electric mobility.</p> -->
                 <p class="small" style="margin-top:12px">Published: <strong>October 2025</strong> • Estimated read:
                     <strong>8-10 minutes</strong>
                 </p>
@@ -266,13 +269,13 @@
                     Bluetooth connectivity, powered by advanced micro-batteries and energy-saving software. Some models
                     even incorporate solar charging or kinetic energy conversion, where wrist movement generates
                     supplemental power—further aligning the technology with sustainable energy trends.</p>
-                <p class="lede">These innovations highlight the electric battery industry’s focus on miniaturization and
+                <!-- <p class="lede">These innovations highlight the electric battery industry’s focus on miniaturization and
                     smart energy utilization. By combining analog precision with electronic intelligence, hybrid watches
                     represent the future of sustainable wearable devices. They demonstrate how efficient battery
                     technologies can extend device functionality while maintaining style and comfort.
 
                     In conclusion, hybrid watch technology exemplifies how advancements in the electric battery industry
-                    are shaping the next generation of smart wearables.</p>
+                    are shaping the next generation of smart wearables.</p> -->
                 <p class="small" style="margin-top:12px">Published: <strong>October 2025</strong> • Estimated read:
                     <strong>8-10 minutes</strong>
                 </p>
@@ -287,12 +290,12 @@
         <div class="summary">
             <h3>Quick navigation</h3>
             <ul>
-                <li id="sumid1" onclick="openid('sumid1')">Home Charging Essentials</li>
-                <li id="sumid2" onclick="openid('sumid2')">Public Charging Networks</li>
-                <li id="sumid3" onclick="openid('sumid3')">Commercial Energy Systems</li>
-                <li id="sumid4" onclick="openid('sumid4')">Compact Executive Electric Cars</li>
-                <li id="sumid5" onclick="openid('sumid5')">EV Charging Point Planning</li>
-                <li id="sumid6" onclick="openid('sumid6')">Hybrid watch Technology</li>
+                <li id="sumid1" onclick="openid('sumid1')">&bull; Home Charging Essentials</li>
+                <li id="sumid2" onclick="openid('sumid2')">&bull; Public Charging Networks</li>
+                <li id="sumid3" onclick="openid('sumid3')">&bull; Commercial Systems</li>
+                <li id="sumid4" onclick="openid('sumid4')">&bull; Compact Electric Cars</li>
+                <li id="sumid5" onclick="openid('sumid5')">&bull; EV Charging Point </li>
+                <li id="sumid6" onclick="openid('sumid6')">&bull; Hybrid watch Technology</li>
             </ul>
 
         </div>
@@ -355,6 +358,16 @@
     <script src="./script10.js"></script>
     <script src="./script11.js"></script>
     <script src="./script12.js"></script>
+
+        <script src="./sidebar.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  </script>
 </body>
 
 </html>
