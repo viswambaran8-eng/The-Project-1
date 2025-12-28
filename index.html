@@ -13,6 +13,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+
+        <div class="body1">
+      <div class="scanner-loader">
+        <div class="scan-frame">
+          <div class="scan-bar"></div>
+        </div>
+        <div class="scan-text">LOADING</div>
+      </div>
+    </div>
+
+<div class="the-main">
+
     <!-- <div class="geometric-bg"></div> -->
     <header>
       <div class="logo">
@@ -341,6 +353,11 @@
             </div>
         </div>
     </footer> 
+
+</div>
+
+    <script src="./loader.js"></script>
+
     <script src="./script.js"></script>
     <script src="./script2.js"></script>
     <script src="./script10.js"></script>
@@ -351,11 +368,12 @@
     <script src="./sidebar.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1000,
-      once: false,
-      mirror: true,
-    });
+      AOS.init({
+        once: true,
+        duration: 1000,
+        easing: "ease-out-cubic",
+        startEvent: "aos:ready", 
+      });
   </script>
 </body>
 
