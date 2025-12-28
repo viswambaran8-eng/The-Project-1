@@ -284,62 +284,149 @@ header nav ul li a:hover::after {
 #cart-toggle:hover {
     background: var(--secondary);
 }
+:root {
+  --primary: #107575;
+  --accent: #2fa39a;
+  --dark: #052525;
+  --light: #f2f9f8;
+}
 
+/* ================= KEYFRAMES ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%,100% {
+    box-shadow: 0 10px 25px rgba(47,163,154,.25);
+  }
+  50% {
+    box-shadow: 0 20px 45px rgba(47,163,154,.45);
+  }
+}
+
+/* ================= SHOP GRID ================= */
 .shop {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 2rem;
-    margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 70px 6%;
+  background: linear-gradient(180deg,#061f1f,#0b2f2f);
 }
 
+/* ================= PRODUCT CARD ================= */
 .product {
-    margin-top: 40px;
-    width: 100%;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    text-align: center;
-    transition: transform 0.3s;
+  background: rgba(255,255,255,0.97);
+  border-radius: 20px;
+  padding: 25px 20px 30px;
+  text-align: center;
+  transition: all .5s ease;
+  position: relative;
+  overflow: hidden;
+  animation: glow 3s infinite;
 }
 
+/* stagger effect */
+.product:nth-child(1){animation-delay:.1s}
+.product:nth-child(2){animation-delay:.15s}
+.product:nth-child(3){animation-delay:.2s}
+.product:nth-child(4){animation-delay:.25s}
+.product:nth-child(5){animation-delay:.3s}
+.product:nth-child(6){animation-delay:.35s}
+.product:nth-child(7){animation-delay:.4s}
+.product:nth-child(8){animation-delay:.45s}
+.product:nth-child(9){animation-delay:.5s}
+.product:nth-child(10){animation-delay:.55s}
+.product:nth-child(11){animation-delay:.6s}
+.product:nth-child(12){animation-delay:.65s}
+
+/* hover lift */
 .product:hover {
-    transform: scale(1.05);
+  transform: translateY(-14px);
+  transition: all .4s ease;
+  animation: fadeUp .9s ease both;
 }
 
+/* ================= IMAGE ================= */
 .product img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding: 40px;
-    border-radius: 10px;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  padding: 30px;
+  border-radius: 14px;
+  transition: transform .6s ease;
 }
 
+.product:hover img {
+  transform: scale(1.12);
+}
+
+/* ================= TEXT ================= */
+.product h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.product p {
+  margin: 8px 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ================= BUTTON ================= */
 .add-cart {
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
+  background: linear-gradient(135deg,var(--primary),var(--accent));
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .35s ease;
+  box-shadow: 0 8px 20px rgba(47,163,154,.35);
 }
 
 .add-cart:hover {
-    background: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(47,163,154,.6);
 }
 
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1100px) {
+  .shop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .shop {
+    grid-template-columns: 1fr;
+  }
+
+  .product img {
+    height: 200px;
+  }
+}
+
+/*  */
 .cart {
     margin-top: 120px;
     position: fixed;
-    right: -350px;
+    right: -500px;
     top: 0;
-    width: 300px;
+    width: 500px;
     height: 100%;
     background: var(--secondary);
     color: white;
