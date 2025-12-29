@@ -347,3 +347,203 @@ span {
     justify-content: space-around;
     align-items: center;
 }
+
+
+footer {
+  height: 100%;
+  text-align: center;
+  color: var(--light);
+  opacity: 0.8;
+}
+
+.footer-parent {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background: rgba(5, 37, 37, 0.85);
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.set1 {
+  padding: 10px;
+}
+
+.logo1 {
+    width: 250px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.set2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-header {
+  color: var(--accent);
+}
+
+.footer-li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer-li a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: #f2f9f8;
+  padding: 5px;
+}
+
+.footer-li a:hover {
+  color: #2fa39a;
+}
+
+.set3 {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-para {
+  color: #f2f9f8;
+}
+
+.set4 {
+  padding: 20px;
+  text-align: center;
+}
+
+.set4 .footer-para {
+  color: #f2f9f8;
+  line-height: 2;
+}
+
+.svg {
+  margin-top: 5px;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  fill: #f2f9f8;
+}
+
+.svg:hover {
+  fill: var(--accent);
+}
+
+@media screen and (max-width: 1441px) {
+  .footer-header {
+    font-size: 26px;
+  }
+  .footer-li {
+    font-size: 22px;
+  }
+  .footer-para {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .footer-parent {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .footer-header {
+    font-size: 24px;
+  }
+  .footer-li {
+    font-size: 20px;
+  }
+  .footer-para {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer-header {
+    margin-top: 10px;
+  }
+
+  .footer-parent {
+    grid-template-columns: auto;
+    padding: 30px;
+  }
+
+  .footer-li {
+    font-size: 16px;
+  }
+  .footer-para {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .footer-header {
+    margin-top: 10px;
+  }
+
+  .footer-li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .footer-header {
+    margin-top: 10px;
+  }
+
+  .footer-parent {
+    grid-template-columns: auto;
+    padding: 0px;
+  }
+
+  .footer-li {
+    font-size: 14px;
+  }
+
+  .set1 {
+    padding: 0px;
+  }
+  .footer-para {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .logo {
+    width: 200px;
+  }
+
+  .logo1 {
+    width: 250px;
+  }
+  .footer-parent {
+    padding: 0px;
+  }
+
+  .footer-header {
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  .set1,
+  .set2,
+  .set3,
+  .set4 {
+    padding: 10px;
+  }
+  .footer-li {
+    font-size: 14px;
+  }
+
+  .set1 {
+    padding: 0px;
+  }
+  .footer-para {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .cta-button {
+    padding: 10px;
+    font-size: 18px;
+  }
+}

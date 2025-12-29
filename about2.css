@@ -68,6 +68,11 @@ header {
   width: 250px;
   padding: 0px 5px;
 }
+.logo1 {
+    width: 250px;
+  height: 80px;
+  object-fit: cover;
+}
 
 .nav_links {
   display: flex;
