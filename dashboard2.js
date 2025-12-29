@@ -21,7 +21,11 @@ new Chart(visitorsCtx, {
         label: "Daily Cell Production",
         data: visitors,
         fill: true,
-        tension: 0.35
+        tension: 0.35,
+        borderColor: "#2ecc71",
+        backgroundColor: "rgba(46, 204, 113, 0.25)",
+        pointBackgroundColor: "#6ee7b7",
+        pointBorderColor: "#ffffff"
       }
     ]
   },
@@ -37,7 +41,14 @@ new Chart(occCtx, {
   type: "doughnut",
   data: {
     labels: ["Utilized", "Idle"],
-    datasets: [{ data: [84, 16] }]
+    datasets: [
+      {
+        data: [84, 16],
+        backgroundColor: ["#2ecc71", "#1f2933"],
+        hoverBackgroundColor: ["#58d68d", "#374151"],
+        borderWidth: 0
+      }
+    ]
   },
   options: { plugins: { legend: { position: "bottom" } } }
 });
@@ -52,7 +63,14 @@ new Chart(revCtx, {
       {
         label: "Revenue ($k)",
         data: [3100, 1400, 480, 120],
-        barPercentage: 0.6
+        barPercentage: 0.6,
+        backgroundColor: [
+          "#2ecc71",
+          "#58d68d",
+          "#27ae60",
+          "#1e8449"
+        ],
+        borderRadius: 6
       }
     ]
   },
@@ -75,7 +93,11 @@ new Chart(radCtx, {
       {
         label: "Performance Score",
         data: [4.8, 4.5, 4.9, 4.7, 4.6],
-        fill: true
+        fill: true,
+        borderColor: "#2ecc71",
+        backgroundColor: "rgba(46, 204, 113, 0.35)",
+        pointBackgroundColor: "#6ee7b7",
+        pointBorderColor: "#ffffff"
       }
     ]
   },
